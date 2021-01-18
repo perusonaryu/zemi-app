@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font Awesome https://fontawesome.com/start -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center  my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form class="search" onsubmit="return false;">
+          <input
+            type="text"
+            class="form-control m-auto"
+            name="search"
+            placeholder="Search KeyWord"
+          />
+        </form>
+      </header>
+
+      <ul class="list-group todos mx-auto ">
+        <!-- javaScript でリストを追加する予定-->
+      </ul>
+
+      <form class="text-center my-4 add-task-form" onsubmit="return false;">
+        <label>ADDING TASK</label>
+        <input
+          type="text"
+          class="form-control add-task"
+          name="add"
+          placeholder="New Task"
+          
+        />
+        <input type="text" id="picker" class="picker form-control" name="color" value="rgb(204, 204, 204)">
+
+        <input type="button" value="追加" class="add">
+      </form>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/i18n/jquery.spectrum-ja.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
