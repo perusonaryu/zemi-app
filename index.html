@@ -25,7 +25,7 @@
   <body>
     <div class="container">
       <header class="text-center  my-4">
-        <h1 class="mb-4">Todo List</h1>
+        <h1 class="mb-4">Task List</h1>
         <form class="search" onsubmit="return false;">
           <input
             type="text"
@@ -40,18 +40,16 @@
         <!-- javaScript でリストを追加する予定-->
       </ul>
 
-      <form class="text-center my-4 add-task-form" onsubmit="return false;">
-        <label>ADDING TASK</label>
+      <form class="text-right my-4 add-task-form" onsubmit="return false;">
+        <h3 class="text-center">Adding Task</h3>
         <input
           type="text"
           class="form-control add-task"
           name="add"
           placeholder="New Task"
-          
         />
-        <input type="text" id="picker" class="picker form-control" name="color" value="rgb(204, 204, 204)">
-
-        <input type="button" value="追加" class="add">
+        <input type="text" id="picker" class="picker form-control " name="color" value="rgb(204, 204, 204)">
+        <a class="add text-center ml-2">Add</a>
       </form>
     </div>
 
