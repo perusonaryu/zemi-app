@@ -15,9 +15,11 @@ const search  = document.querySelector('.search input');
                 
         if(taskData){
             if(taskData.taskCheck == 0){
+
                 taskCheckbox = `<input type="checkbox" name="checkbox" class="checkbtn" >`;
             }else if(taskData.taskCheck == 1){
                 taskCheckbox = `<input type="checkbox" name="checkbox" class="checkbtn"  checked >`;
+
             }
 
             list.innerHTML += `
@@ -26,7 +28,9 @@ const search  = document.querySelector('.search input');
                         <p class="text-center title">${taskData.task}</p>
                         <p class="fon-s">${taskData.dateTime}</p>
                     </div>
+
                     <div data-title='${taskData.task}' class="d-flex align-items-center">
+
                         <i class="far fa-2x fa-trash-alt delete mr-3"></i>
                         ${taskCheckbox}
                     </div>
@@ -90,8 +94,10 @@ const createTodoList = (task,color) => {
                 <p class="fon-s">${dateTime}</p>
             </div>
             <div data-title='${task}'>
+
                 <i class="far fa-2x fa-trash-alt delete"></i>
                 <input type="checkbox" name="checkbox" class="check checkbtn">
+
             </div>
         </li>
     `;
@@ -147,7 +153,9 @@ list.addEventListener('click',e => {
 
 
     //taskチェック機能
+
     if(e.target.classList.contains('checkbtn')){
+
         const checkBox = e.target;
         const key = e.target.parentElement.getAttribute('data-title').trim();
         const taskData = JSON.parse(localStorage.getItem(key));
